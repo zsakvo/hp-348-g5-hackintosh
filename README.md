@@ -1,5 +1,23 @@
 # HP 348 G5 黑苹果配置
 
+### 2019.11.3 更新:
+
+1，系统版本升级至 `MacOS 10.15.1`
+
+2，使用 `VirtualSMC` 替代 `FakeSMC`
+
+3，显卡仿冒 `Intel Iris Plus Graphics 655` 进行驱动
+
+4，应用部分 `hotpatch`
+
+5，升级必要驱动版本
+
+6，替换原装网卡为 `DW1820A`，驱动内置 wifi 以及 蓝牙
+
+7，精简 `config.plist`
+
+---
+
 系统版本：MacOS 10.14.6，驱动状况如下：
 
 1. 声卡：型号为 ALC236，注入 ID：13，使用 AppleALC 仿冒，顺利加载；
