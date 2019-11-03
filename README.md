@@ -8,13 +8,15 @@
 
 3，显卡仿冒 `Intel Iris Plus Graphics 655` 进行驱动
 
-4，应用部分 `hotpatch`
+4，完善 HDMI 视频输出
 
-5，升级必要驱动版本
+5，应用部分 `hotpatch`
 
-6，替换原装网卡为 `DW1820A`，驱动内置 wifi 以及 蓝牙
+6，升级必要驱动版本
 
-7，精简 `config.plist`
+7，替换原装网卡为 `DW1820A`，驱动内置 wifi 以及 蓝牙
+
+8，精简 `config.plist`
 
 ---
 
