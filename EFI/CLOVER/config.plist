@@ -262,6 +262,7 @@
 		<key>SortedOrder</key>
 		<array>
 			<string>SSDT-PNLFCFL.aml</string>
+			<string>SSDT-UIAC.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -498,8 +499,19 @@
 	<dict>
 		<key>EDID</key>
 		<dict>
+			<key>Custom</key>
+			<data>
+			AP///////wAJ5ScIAAAAAAEcAQSVHxF4A/cAlldUkigjUFQAAAAB
+			AQEBAQEBAQEBAQEBAQEBShxWolAAFjAwIDYANa4QAAAa3BJWolAA
+			FjAwIDYANa4QAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAMSf8K
+			PG4RDxtuAAAAAHU=
+			</data>
 			<key>Inject</key>
-			<false/>
+			<true/>
+			<key>ProductID</key>
+			<string>0x827</string>
+			<key>VendorID</key>
+			<string>0x9E5</string>
 		</dict>
 		<key>Inject</key>
 		<dict>
