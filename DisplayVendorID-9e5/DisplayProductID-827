@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>DisplayProductID</key>
+            <integer>2087</integer>
+        <key>DisplayVendorID</key>
+            <integer>2533</integer>
+        <key>IODisplayEDID</key>
+            <data>AP///////wAJ5ScIAAAAAAEcAQSQHxF4A/cAlldUkigjUFQAAAABAQEBAQEBAQEBAQEBAQEBShxWolAAFjAwIDYANa4QAAAa3BJWolAAFjAwIDYANa4QAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAMSf8KPG4RDxtuAAAAAHo=</data>
+        <key>scale-resolutions</key>
+            <array>
+                <data>AAAKrAAABgAAAAAB</data>
+                <data>AAAKrAAABgAAAAABACAAAA==</data>
+                <data>AAAUAAAAC0AAAAAB</data>
+                <data>AAAUAAAAC0AAAAABACAAAA==</data>
+                <data>AAAKAAAABkAAAAABACAAAA==</data>
+                <data>AAAKAAAABaAAAAABACAAAA==</data>
+                <data>AAAHgAAABLAAAAABACAAAA==</data>
+                <data>AAAHgAAABDgAAAABACAAAA==</data>
+                <data>AAAFAAAAAtAAAAABACAAAA==</data>
+                <data>AAAGkAAAA7AAAAAB</data>
+                <data>AAAGQAAAA4QAAAAB</data>
+                <data>AAAFoAAAAyoAAAAB</data>
+                <data>AAAFAAAAAtAAAAAB</data>
+                <data>AAAEgAAAAogAAAAB</data>
+                <data>AAAEAAAAAkAAAAAB</data>
+                <data>AAADSAAAAdQAAAAB</data>
+                <data>AAADIAAAAcIAAAAB</data>
+                <data>AAACgAAAAWgAAAAB</data>
+                <data>AAANIAAAB2AAAAAJAKAAAA==</data>
+                <data>AAALQAAABlQAAAAJAKAAAA==</data>
+                <data>AAAKAAAABaAAAAAJAKAAAA==</data>
+                <data>AAAIAAAABIAAAAAJAKAAAA==</data>
+                <data>AAAHgAAABDgAAAAJAKAAAA==</data>
+                <data>AAAGkAAAA7AAAAAJAKAAAA==</data>
+                <data>AAAGQAAAA4QAAAAJAKAAAA==</data>
+                <data>AAAFAAAAAtAAAAAJAKAAAA==</data>
+            </array>
+        <key>target-default-ppmm</key>
+            <real>10.0699301</real>
+    </dict>
+</plist>
