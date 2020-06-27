@@ -92,50 +92,10 @@
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixShutdown</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Patches</key>
 			<array>
-				<dict>
-					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SF9FQw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SEVDSQ==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>TUVJXw==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R0ZYMA==</data>
-					<key>Replace</key>
-					<data>SUdQVQ==</data>
-				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>Fix AsRock Z390 BIOS DSDT Device(RTC) bug</string>
@@ -148,47 +108,15 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>CRS2XCRS</string>
+					<string>_CRS to XCRS</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>X0NSUw==</data>
 					<key>Replace</key>
 					<data>WENSUw==</data>
 					<key>TgtBridge</key>
 					<data>VFBEMA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>STA2XSTA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1NUQQ==</data>
-					<key>Replace</key>
-					<data>WFNUQQ==</data>
-					<key>TgtBridge</key>
-					<data>R1BJMA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename SSCN to XSCN</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>U1NDTg==</data>
-					<key>Replace</key>
-					<data>WFNDTg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename FMCN to XMCN</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>Rk1DTg==</data>
-					<key>Replace</key>
-					<data>WE1DTg==</data>
 				</dict>
 			</array>
 		</dict>
@@ -221,8 +149,9 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
+			<string>SSDT-TPD0.aml</string>
 			<string>SSDT-PNLFCFL.aml</string>
-			<string>SSDT-UIAC.aml</string>
+			<string>SSDT-EC.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -296,11 +225,6 @@
 				<data></data>
 			</dict>
 		</array>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>15</integer>
-		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>#Kaby Lake-Comment</key>
@@ -559,31 +483,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port limit patch #2 10.15.x modify by DalianSky</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/kPDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/k/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>SU9LaXQ=</data>
 				<key>InfoPlistPatch</key>
-				<false/>
+				<true/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2C</string>
+				<string>AppleIntelLpssI2C</string>
 				<key>Replace</key>
 				<data>SU9LaXM=</data>
 			</dict>
@@ -591,13 +499,13 @@
 				<key>Comment</key>
 				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>SU9LaXQ=</data>
 				<key>InfoPlistPatch</key>
-				<false/>
+				<true/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2CController</string>
+				<string>AppleIntelLpssI2CController</string>
 				<key>Replace</key>
 				<data>SU9LaXM=</data>
 			</dict>
