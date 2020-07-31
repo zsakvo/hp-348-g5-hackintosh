@@ -1,23 +1,23 @@
 # HP 348 G5 黑苹果配置
 
-> 请注意，这款笔记本并非正常的零售型号，所以如果您重装系统的技能并不娴熟，亦或是没有充足的应付意外情况的手段，建议您按一下 `Ctrl+W`，谢谢配合~
+### 2020.07.31 更新:
 
-### 2020.06.27 更新:
+- 支持 MacOS Big Sur beta3
+- OpenCore 升级为最新编译的 0.6.0 版本
+- 更新内置驱动程序版本
+- 新增 `AppleAHCIPort.kext` 以解决 Big Sur 不识别内置硬盘问题
+- 移除 i2c 相关驱动（触摸板暂时不可使用）
 
-> 引导程序由 Clover 迁移至 OpenCore
 
----
+### 系统截图：
 
-系统版本：MacOS 10.15.x，驱动状况如下：
+![](images/1.jpg)
 
-1. 声卡：型号为 `ALC236`，正常；
-2. 无线网卡&蓝牙：使用 `DW1820A` 替代原厂硬件，工作正常；
-3. 显卡：Intel UHD Graphics 620，使用    `whatevergreen` 驱动，睡眠唤醒正常；
-4. `HDMI` 正常工作
-5. 电池信息正常；
-6. 触摸板：目前不识别，懒的搞
-7. 其余基本正常
+![](images/2.jpg)
 
-系统截图：
 
- 参见 `master` 分支
+### 致谢：
+
+- [Apple](https://www.apple.com) for macOS
+- [Acidanthera](https://github.com/acidanthera/) for OpenCore and Other kexts
+- [Asafscode](https://github.com/asafscode/HP-Probook-430-G5-Hackintosh) for `AppleAHCIPort.kext`
