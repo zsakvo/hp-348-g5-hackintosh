@@ -1,13 +1,12 @@
 # HP 348 G5 黑苹果配置
 
-### 2020.07.31 更新:
+### 2020.08.7 更新:
 
-- 支持 MacOS Big Sur beta3
+- 支持 MacOS Big Sur beta4
 - OpenCore 升级为最新编译的 0.6.0 版本
 - 更新内置驱动程序版本
-- 新增 `AppleAHCIPort.kext` 以解决 Big Sur 不识别内置硬盘问题
+- 根据建议重新定制 `AppleAHCIPort.kext`（已更名 `CtlnaAHCIPort.kext`），并移除 `SATA-unsupported.kext` 来驱动硬盘，此次定制更加稳定，同时适用于 10.15 和 10.16
 - 移除 i2c 相关驱动（触摸板暂时不可使用）
-
 
 ### 系统截图：
 
@@ -15,9 +14,8 @@
 
 ![](images/2.jpg)
 
-
 ### 致谢：
 
 - [Apple](https://www.apple.com) for macOS
 - [Acidanthera](https://github.com/acidanthera/) for OpenCore and Other kexts
-- [Asafscode](https://github.com/asafscode/HP-Probook-430-G5-Hackintosh) for `AppleAHCIPort.kext`
+- [Acidanthera](https://dortania.github.io/OpenCore-Install-Guide/extras/big-sur/#supported-hardware) for `CtlnaAHCIPort.kext`
